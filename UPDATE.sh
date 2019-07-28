@@ -34,7 +34,7 @@ find generic -name '..install.cmd' -delete
 find generic -name '.install' -delete
 git add generic/include/
 
-for arch in arm arm64 powerpc mips x86 microblaze openrisc sh
+for arch in arm arm64 powerpc mips x86 microblaze openrisc riscv sh
 do
   git rm -rf $arch/include/*
   mkdir -p $arch/include
